@@ -18,7 +18,7 @@ class AuthController extends BaseController
         $username = $this->request->getVar('username');
         $password = $this->request->getVar('password');
 
-        $dataUser = ['username' => 'ilham', 'password' => '72db86e4c73b9fabb4810562b236488e', 'role' => 'admin']; // passw 123
+        $dataUser = ['username' => 'ilham', 'password' => '72db86e4c73b9fabb4810562b236488e', 'role' => 'admin']; // pass 15626
 
         if ($username == $dataUser['username']) {
             if (md5($password) == $dataUser['password']) {
